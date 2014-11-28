@@ -11,9 +11,6 @@
   "engines": {
     "node": ">=0.10.0"
   },
-  "scripts": {
-    "test": "mocha --reporter spec test/*.js"
-  },
   "repository": {
     "type": "git",
     "url": "http://github.com/telemark/utils-firebase-import-opengov-agenda.git"
