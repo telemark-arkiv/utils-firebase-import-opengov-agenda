@@ -42,7 +42,7 @@ function putNewAgendaItem (item) {
     if (error) {
       console.error("error");
     } else {
-      console.log("Smooth breeze");
+      console.log(putData.saksnummer + ' OK');
     }
   });
 }
@@ -51,8 +51,12 @@ function cb(err, data){
   if(err){
     console.error(err);
   } else {
-    data.agenda.forEach(function(item){
+    console.log('Import items');
+    data.agenda.forEach(function(item, index, arr){
       putNewAgendaItem(item);
+      if(index === arr.length - 1){
+        console.log('Finished. ' + arr.length + ' items imported.');
+      }
     });
   }
 }
@@ -61,6 +65,7 @@ dataRef.authWithCustomToken(token, function(error) {
   if (error) {
     console.error(error);
   } else {
+    console.log('Authenticated.');
     ogm.getAgenda(opts, cb);
   }
 });
