@@ -19,6 +19,9 @@
   "bugs": {
     "url": "http://github.com/telemark/utils-firebase-import-opengov-agenda/issues"
   },
+  "scripts": {
+    "start" : "node index.js"
+  },
   "dependencies": {
     "firebase": "^2.0.5",
     "firebase-token-generator": "^2.0.0",

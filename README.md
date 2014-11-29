@@ -29,3 +29,9 @@ Setup config.js to fit your environment.
 **ogmPath** path to your OpenGov installation. example: /Meetings/tfk
 
 **ogmMeetingId** Id for the meeting you want to import agenda from. It is the last part of the url. 'http://opengov.cloudapp.net/Meetings/tfk/Meetings/Details/202762' the id is '202762'
+
+Start import with npm.
+
+```
+$ npm start
+```
