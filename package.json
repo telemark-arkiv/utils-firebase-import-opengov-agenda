@@ -1,5 +1,6 @@
 {
   "name": "utils-firebase-import-opengov-agenda",
+  "description": "Import agenda from OpenGov to Firebase",
   "version": "1.0.0",
   "private": true,
   "author": {
