@@ -47,15 +47,15 @@ function putNewAgendaItem (item) {
   });
 }
 
-function cb(err, data){
+function dataHandler(err, data){
   if(err){
     console.error(err);
   } else {
-    console.log('Import items');
+    console.log('Data received');
     data.agenda.forEach(function(item, index, arr){
       putNewAgendaItem(item);
       if(index === arr.length - 1){
-        console.log('Finished. ' + arr.length + ' items imported.');
+        console.log('Finished parsing data. ' + arr.length + ' items ready for import.');
       }
     });
   }
@@ -66,6 +66,6 @@ dataRef.authWithCustomToken(token, function(error) {
     console.error(error);
   } else {
     console.log('Authenticated.');
-    ogm.getAgenda(opts, cb);
+    ogm.getAgenda(opts, dataHandler);
   }
 });
