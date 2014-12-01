@@ -1,12 +1,12 @@
 'use strict';
 
 var config = {
-      firebaseHost: 'your-firebase-ref.firebaseio.com',
-      firebaseSecret: 'your-firebase-secret',
-      ogmHost: 'your-opengov-host',
-      ogmPath: 'your-opengov-path',
-      ogmMeetingId: 'your-meeting-id'
-    }
+    firebaseHost: 'tfk-fylkesting.firebaseio.com',
+    firebaseSecret: 'Q6FEgulaJceNoE5SugMcRmirOIwKfCzOnwsEoVqR',
+    ogmHost: 'http://opengov.cloudapp.net',
+    ogmPath: '/Meetings/tfk',
+    ogmMeetingId: '202761'
+  }
   ;
 
 module.exports = config;
