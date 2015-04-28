@@ -6,13 +6,14 @@ var config = require('./config');
 var Firebase = require('firebase');
 var FirebaseTokenGenerator = require('firebase-token-generator');
 var tokenGenerator = new FirebaseTokenGenerator(config.firebaseSecret);
-var token = tokenGenerator.createToken({"dill": "dall"}, {"admin" : true});
-var dataRef = new Firebase("https://" + config.firebaseHost + "/" + config.ogmMeetingId + "/saker/");
+var token = tokenGenerator.createToken({'dill': 'dall'}, {'admin' : true});
+var firebaseUrl = 'https://' + config.firebaseHost + '/' + config.ogmMeetingId + '/saker/';
+var dataRef = new Firebase(firebaseUrl);
 var opts = {
   host: config.ogmHost,
   path: config.ogmPath,
   meetingId: config.ogmMeetingId
-  };
+};
 
 function prepareAgendaItem(item) {
   var newUUID = uuid.v4();
@@ -21,7 +22,7 @@ function prepareAgendaItem(item) {
     antall_forslag : 0,
     behandlet : false,
     sakID : item.id + '-' +  newUUID,
-    saksinnstilling : "",
+    saksinnstilling : '',
     saksnummer : item.agendanumber,
     sakstall : parseInt(item.agendanumber.split('/')[0], 10),
     sakstittel :  item.title,
