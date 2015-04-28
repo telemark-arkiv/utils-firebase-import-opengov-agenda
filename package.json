@@ -20,7 +20,8 @@
     "url": "http://github.com/telemark/utils-firebase-import-opengov-agenda/issues"
   },
   "scripts": {
-    "start" : "node index.js"
+    "setup": "npm install && node setup.js",
+    "start": "node index.js"
   },
   "dependencies": {
     "firebase": "^2.2.4",
