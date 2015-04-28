@@ -10,10 +10,10 @@ Clone repo from GitHub.
 $ git clone git@github.com:telemark/utils-firebase-import-opengov-agenda.git
 ```
 
-cd into directory and install dependecies using npm.
+cd into directory and run setup via npm.
 
 ```
-$ npm install
+$ npm run setup
 ```
 
 ##Usage
