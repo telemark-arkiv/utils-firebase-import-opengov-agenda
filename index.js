@@ -56,9 +56,9 @@ function putNewAgendaItem (item) {
   })
 }
 
-function dataHandler (err, data) {
-  if (err) {
-    console.error(err)
+function dataHandler (error, data) {
+  if (error) {
+    console.error(error)
   } else {
     console.log('Data received from OpenGov.')
     jobsQued = data.agenda.length

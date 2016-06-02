@@ -20,7 +20,7 @@
     "url": "http://github.com/telemark/utils-firebase-import-opengov-agenda/issues"
   },
   "scripts": {
-    "test": "standard && tap --reporter=spec test/**/*.js",
+    "test": "standard",
     "setup": "npm install && node setup.js",
     "start": "node index.js"
   },
