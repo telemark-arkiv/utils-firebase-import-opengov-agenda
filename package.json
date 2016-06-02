@@ -30,6 +30,6 @@
     "uuid": "2.0.2"
   },
   "devDependencies": {
-    "jscs": "^1.12.0"
+    "standard": "7.1.1"
   }
 }
