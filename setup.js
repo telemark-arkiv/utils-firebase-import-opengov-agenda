@@ -1,3 +1,3 @@
-'use strict';
+'use strict'
 
-console.log('You\'re good to go!');
+console.log('Everything\'s shiny, Cap\'n. Not to fret.')
