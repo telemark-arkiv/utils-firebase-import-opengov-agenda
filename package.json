@@ -27,7 +27,7 @@
   "dependencies": {
     "firebase": "3.3.0",
     "firebase-token-generator": "2.0.0",
-    "opengov-meetings": "1.0.0",
+    "opengov-meetings": "2.0.0",
     "uuid": "2.0.2"
   },
   "devDependencies": {
