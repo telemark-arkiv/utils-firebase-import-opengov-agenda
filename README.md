@@ -1,5 +1,7 @@
 #utils-firebase-import-opengov-agenda
 
+[![Greenkeeper badge](https://badges.greenkeeper.io/telemark/utils-firebase-import-opengov-agenda.svg)](https://greenkeeper.io/)
+
 Import agenda from 360 OpenGov to Firebase
 
 ##Installation
